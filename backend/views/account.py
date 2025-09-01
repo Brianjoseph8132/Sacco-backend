@@ -71,7 +71,7 @@ def create_account():
     new_account.set_pin(pin)
 
     db.session.add(new_account)
-    db.session.flush()  # This assigns an ID to new_account without committing
+    db.session.flush()  
 
     # Record initial deposit if amount > 0
     if initial_deposit > 0:
